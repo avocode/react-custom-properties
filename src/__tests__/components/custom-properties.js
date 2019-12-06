@@ -1,10 +1,13 @@
 import React from 'react';
 import { findDOMNode } from 'react-dom';
-import { mount, shallow } from 'enzyme';
+import Enzyme, { mount, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import CustomProperties from '../../components/custom-properties';
 import * as utilities from '../../utilities';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 const FAKE_ROOT_NODE = {
   style: {
