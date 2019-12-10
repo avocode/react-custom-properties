@@ -1,5 +1,5 @@
 {
-  "name": "react-custom-properties",
+  "name": "@avocode/react-custom-properties",
   "version": "1.2.0",
   "description": "A React component for applying CSS Variables (Custom Properties)",
   "repository": {
